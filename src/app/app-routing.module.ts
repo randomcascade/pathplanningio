@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { RectanglesComponent } from './rectangles/rectangles.component';
+
 
 
 const routes: Routes = [];
