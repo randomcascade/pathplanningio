@@ -6,15 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rectangles.component.css']
 })
 export class RectanglesComponent implements OnInit {
-  height: number;
-  width: number;
-
-  constructor(public h?: number, public w?: number) {
-    this.height = h;
-    this.width = w;
+  public height = 10;
+  public width = 10;
+  public grid: any[];
+  constructor() {
    }
 
   ngOnInit(): void {
+  }
+  newRectangles(h: number, w: number) {
+    this.grid = Array(h * w).fill(null);
+
   }
 
 }
