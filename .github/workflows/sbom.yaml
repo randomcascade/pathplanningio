@@ -12,4 +12,4 @@ jobs:
       - name: Generate SBOM
         uses: randomcascade/sbom-spdx-action@main
         with:
-          input-path: pathplanningio
+          source-path: pathplanningio
